@@ -1,7 +1,6 @@
 const relatorioForm = document.getElementById('relatorioForm');
 const relatoriosContainer = document.getElementById('relatoriosContainer');
 
-// Carregar relatórios salvos ao iniciar a página
 carregarRelatorios();
 
 relatorioForm.addEventListener('submit', (event) => {
