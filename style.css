@@ -1,0 +1,69 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+form {
+    width: 90%;
+    margin: 20px auto;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="date"], textarea, select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+#relatoriosContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.relatorio {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+}
+
+.relatorio button {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+
+@media (min-width: 768px) {
+    form {
+        width: 60%;
+    }
+
+    .relatorio {
+        width: calc(48% - 20px);
+    }
+}

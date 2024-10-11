@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Relatório Predial</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Relatório Predial</h1>
+
+    <form id="relatorioForm">
+        <label for="torre">Torre:</label>
+        <select id="torre" name="torre" required>
+            <option value="torre1">Torre 1</option>
+            <option value="torre2">Torre 2</option>
+            <option value="torre3">Torre 3</option>
+            <option value="torre4">Torre 4</option>
+            <option value="torre5">Torre 5</option>
+        </select>
+
+        <label for="data">Data da Vistoria:</label>
+        <input type="date" id="data" name="data" required>
+
+        <label for="local">Local da Vistoria:</label>
+        <input type="text" id="local" name="local" required>
+
+        <label for="observacoes">Observações:</label>
+        <textarea id="observacoes" name="observacoes"></textarea>
+
+        <button type="submit">Salvar Relatório</button>
+    </form>
+
+    <h2>Relatórios Salvos</h2>
+    <div id="relatoriosContainer"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
